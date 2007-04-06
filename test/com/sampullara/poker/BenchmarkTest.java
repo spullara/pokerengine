@@ -4,6 +4,9 @@ import junit.framework.TestCase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,9 +16,13 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class BenchmarkTest extends TestCase {
-    private static final int ITERATIONS = 100000;
+    private static int ITERATIONS = 100000;
 
     public void testGameSpeed() {
+        getGameSpeed();
+    }
+
+    private long getGameSpeed() {
         long start = System.currentTimeMillis();
         for (int i = 0; i < ITERATIONS; i++) {
             Deck deck = new Deck();
@@ -54,12 +61,16 @@ public class BenchmarkTest extends TestCase {
             }
         }
         long duration = System.currentTimeMillis() - start;
-        System.out.println(ITERATIONS * 1000 / duration + " games/second");
+        return ITERATIONS * 1000 / duration;
     }
 
-    private static final int TOTAL = 100000;
+    private static int TOTAL = 100000;
 
     public void testEvaluations() {
+        getEvaluations();
+    }
+
+    private long getEvaluations() {
         List<Hand> hands = new ArrayList<Hand>(TOTAL);
         List<Board> boards = new ArrayList<Board>(TOTAL);
         for (int i = 0; i < TOTAL; i++) {
@@ -97,11 +108,33 @@ public class BenchmarkTest extends TestCase {
             HandRank rank = hand.getHandRank(board);
         }
         long duration = System.currentTimeMillis() - start;
-        System.out.println(3 * TOTAL * 1000 / duration + " ranks/second");
+        return 3 * TOTAL * 1000 / duration;
     }
 
-    public static void main(String[] args) {
-        BenchmarkTest benchmark = new BenchmarkTest();
-        benchmark.testEvaluations();
+    public static void main(String[] args) throws InterruptedException {
+        int cpus = Runtime.getRuntime().availableProcessors();
+        if (args.length != 0) {
+            cpus = Integer.parseInt(args[0]);
+        }
+        ITERATIONS = 200000;
+        TOTAL = 200000;
+        final int[] games = new int[1];
+        final int[] ranks = new int[1];
+        ExecutorService executor = Executors.newFixedThreadPool(cpus);
+        for (int i = 0; i < cpus; i++) {
+            executor.submit(new Runnable() {
+                public void run() {
+                    BenchmarkTest benchmark = new BenchmarkTest();
+                    long g = benchmark.getGameSpeed();
+                    long r = benchmark.getEvaluations();
+                    games[0] += g;
+                    ranks[0] += r;
+                }
+            });
+        }
+        executor.shutdown();
+        executor.awaitTermination(1000, TimeUnit.SECONDS);
+        System.out.println(games[0] + " games/second");
+        System.out.println(ranks[0] + " ranks/second");
     }
 }

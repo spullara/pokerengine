@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" relativePaths="false">
+<project relativePaths="false" version="4">
   <component name="AspectsView" />
   <component name="BookmarkManager" />
+  <component name="CCaseConfig">
+    <option name="implementation" value="net.sourceforge.transparent.CommandLineClearCase" />
+    <option name="clearcaseRoot" value="" />
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="offline" value="false" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="lastViewType" />
+  </component>
   <component name="ChangeBrowserSettings">
     <option name="MAIN_SPLITTER_PROPORTION" value="0.3" />
     <option name="MESSAGES_SPLITTER_PROPORTION" value="0.8" />
@@ -17,17 +28,15 @@
     <option name="USER" value="" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Deck.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Deck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Card.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Card.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.iws" afterPath="$PROJECT_DIR$/PokerEngine.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Board.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Hand.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Hand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java" />
+    <list comment="" default="true" name="Default">
+      <change afterPath="$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java" type="MODIFICATION" />
+      <change afterPath="$PROJECT_DIR$/PokerEngine.ipr" beforePath="$PROJECT_DIR$/PokerEngine.ipr" type="MODIFICATION" />
+      <change afterPath="$PROJECT_DIR$/PokerEngine.iml" beforePath="$PROJECT_DIR$/PokerEngine.iml" type="MODIFICATION" />
+      <change afterPath="$PROJECT_DIR$/PokerEngine.iws" beforePath="$PROJECT_DIR$/PokerEngine.iws" type="MODIFICATION" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
-  <component name="ChangesViewManager" flattened_view="true" />
+  <component flattened_view="true" name="ChangesViewManager" show_ignored="false" />
   <component name="CheckinPanelState" />
   <component name="ClassPatternConfiguration">
     <option name="TEST_CLASS_PATTERN" value="test/$CLASS$Test" />
@@ -47,9 +56,21 @@
     <option name="ASSERT_NOT_NULL" value="true" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.es" NAME="All Tests" MODIFIED="1174103912094">
+    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$HandRankTest.es" MODIFIED="1174149612433" NAME="HandRankTest">
       <FILTER>com.sampullara.poker.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.es" MODIFIED="1174106012076" NAME="All Tests">
+      <FILTER>com.sampullara.poker.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.sampullara.poker.es" MODIFIED="1174121676767" NAME="All Tests">
+      <FILTER>com.sampullara.poker.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="/Users/sam/Library/Caches/IntelliJIDEA70/coverage/PokerEngine$All Tests$com.sampullara.poker.es" MODIFIED="1174242527430" NAME="All Tests">
+      <FILTER>com.sampullara.poker.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
   </component>
   <component name="Cvs2Configuration">
     <option name="PRUNE_EMPTY_DIRECTORIES" value="true" />
@@ -103,42 +124,14 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java" line="300" class="com.sampullara.poker.HandRankTest" package="com.sampullara.poker">
-        <option name="ENABLED" value="true" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java" line="313" class="com.sampullara.poker.HandRankTest" package="com.sampullara.poker">
-        <option name="ENABLED" value="true" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
         <option name="ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -151,9 +144,9 @@
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
         <option name="ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -165,6 +158,11 @@
     </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
+  </component>
+  <component name="ErrorOptionsConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl />
+    </option>
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -189,124 +187,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HandRank.java" pinned="false" current="true" current-in-tab="true">
+      <file current="false" current-in-tab="false" leaf-file-name="HandRank.java" pinned="false">
         <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="-10.121127">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="36" line="259" selection-end="7504" selection-start="7504" vertical-scroll-proportion="0.95049506">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HandRankTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="515" column="27" selection-start="23128" selection-end="23128" vertical-scroll-proportion="15.346478">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.3243243">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Card.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Card.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.25945947">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Deck.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Deck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="1.0054054">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Hand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="285" selection-end="285" vertical-scroll-proportion="0.3243243">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/ArrayList.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="440" selection-end="440" vertical-scroll-proportion="0.30422536">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BenchmarkTest.java" pinned="false" current="false" current-in-tab="false">
+      <file current="true" current-in-tab="true" leaf-file-name="BenchmarkTest.java" pinned="false">
         <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="-0.06486487">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="23" line="119" selection-end="3870" selection-start="3870" vertical-scroll-proportion="0.31188118">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="70" selection-end="70" vertical-scroll-proportion="0.032432433">
-              <folding>
-                <marker date="1174103454000" expanded="true" signature="559:910" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="992:1841" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="1050:1829" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="2092:2199" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="2886:2965" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="3014:3143" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="3203:3695" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="3759:3843" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="3893:4013" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="3949:4001" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="4068:4189" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="4124:4177" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="4540:5401" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="4857:5138" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="5190:5387" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="5255:5371" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="5601:6472" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="5926:6204" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="6260:6458" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="6326:6442" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="6550:6674" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="6735:6814" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="7086:7212" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="7243:7318" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="7864:9468" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="8031:8320" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="8195:8304" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="8492:8998" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="8886:8981" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="9029:9370" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="9074:9354" placeholder="..." />
-                <marker date="1174103454000" expanded="true" signature="9126:9198" placeholder="..." />
-              </folding>
+      <file current="false" current-in-tab="false" leaf-file-name="HandRankTest.java" pinned="false">
+        <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="0" line="242" selection-end="10242" selection-start="10242" vertical-scroll-proportion="0.03084833">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+      <file current="false" current-in-tab="false" leaf-file-name="Card.java" pinned="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Card.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="19" line="10" selection-end="180" selection-start="180" vertical-scroll-proportion="0.23762377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current="false" current-in-tab="false" leaf-file-name="Deck.java" pinned="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Deck.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="19" line="14" selection-end="262" selection-start="262" vertical-scroll-proportion="0.2970297">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current="false" current-in-tab="false" leaf-file-name="Hand.java" pinned="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Hand.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state column="0" line="45" selection-end="1054" selection-start="1054" vertical-scroll-proportion="1.2029703">
               <folding />
             </state>
           </provider>
@@ -377,12 +306,13 @@
     <option name="SPLITTER_PROPORTION" value="0.5" />
     <option name="GROUP_BY_SEVERITY" value="false" />
     <option name="FILTER_RESOLVED_ITEMS" value="true" />
-    <option name="ANALYZE_TEST_SOURCES" value="true" />
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
     <option name="SHOW_DIFF_WITH_PREVIOUS_RUN" value="false" />
-    <option name="SCOPE_TYPE" value="1" />
-    <option name="CUSTOM_SCOPE_NAME" value="" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Production Files" />
     <option name="SHOW_ONLY_DIFF" value="false" />
-    <option name="myCurrentProfileName" value="Default" />
+    <option name="SHOW_STRUCTURE" value="true" />
+    <option name="ANALYSIS_IN_BACKGROUND" value="false" />
   </component>
   <component name="J2EEProjectPane" />
   <component name="JUnitClassTemplateConfiguration">
@@ -392,7 +322,7 @@
     <option name="TEST_TEMPLATES">
       <value>
         <list size="1">
-          <item index="0" class="java.lang.String" itemvalue="Default Test Class.java" />
+          <item class="java.lang.String" index="0" itemvalue="Default Test Class.java" />
         </list>
       </value>
     </option>
@@ -404,8 +334,8 @@
     <option name="TEST_TEMPLATES">
       <value>
         <list size="2">
-          <item index="0" class="java.lang.String" itemvalue="Default Test Method.java" />
-          <item index="1" class="java.lang.String" itemvalue="Test Method throws Exception.java" />
+          <item class="java.lang.String" index="0" itemvalue="Default Test Method.java" />
+          <item class="java.lang.String" index="1" itemvalue="Test Method throws Exception.java" />
         </list>
       </value>
     </option>
@@ -469,24 +399,24 @@
     <option name="SERVER_TIMEOUT" value="20000" />
   </component>
   <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkin" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <OptionsSetting value="true" id="Undo Check Out" />
-    <OptionsSetting value="true" id="Compare with SourceSafe Version" />
-    <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <OptionsSetting id="Add" value="true" />
+    <OptionsSetting id="Remove" value="true" />
+    <OptionsSetting id="Checkin" value="true" />
+    <OptionsSetting id="Checkout" value="true" />
+    <OptionsSetting id="Update" value="true" />
+    <OptionsSetting id="Status" value="true" />
+    <OptionsSetting id="Edit" value="true" />
+    <OptionsSetting id="Undo Check Out" value="true" />
+    <OptionsSetting id="Compare with SourceSafe Version" value="true" />
+    <OptionsSetting id="Get Latest Version" value="true" />
+    <ConfirmationsSetting id="Add" value="0" />
+    <ConfirmationsSetting id="Remove" value="0" />
   </component>
   <component name="ProjectPane">
     <subPane>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine.ipr" />
+          <option name="myItemId" value="PokerEngine" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -496,7 +426,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine.ipr" />
+          <option name="myItemId" value="PokerEngine" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -510,7 +440,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine.ipr" />
+          <option name="myItemId" value="PokerEngine" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -530,60 +460,32 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine.ipr" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/src/com/sampullara/poker" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine.ipr" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PokerEngine" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:$PROJECT_DIR$/lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectRootConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl>
+        <option name="proportions">
+          <collection>
+            <option value="0.11111111" />
+          </collection>
+        </option>
+      </SplitterProportionsDataImpl>
+    </option>
+    <option name="lastEditedConfigurable" value="PokerEngine" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="0.11111111" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="0.11111111" splitterProportion="0.5" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <showStructure ProjectPane="false" Scope="false" PackagesPane="false" />
+      <showStructure PackagesPane="false" ProjectPane="false" Scope="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
@@ -599,8 +501,8 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="false" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
   </component>
   <component name="ReadonlyStatusHandler">
@@ -624,35 +526,7 @@
   </component>
   <component name="RestoreUpdateTree" />
   <component name="RunManager" selected="JUnit.All Tests">
-    <tempConfiguration default="false" name="HandRankTest.testComparisons" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <pattern value="com.sampullara.poker.*" />
-      <module name="PokerEngine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
-      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.HandRankTest" />
-      <option name="METHOD_NAME" value="testComparisons" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64087" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </tempConfiguration>
-    <configuration default="true" type="WebLogic Instance" factoryName="Remote">
+    <configuration default="true" factoryName="Remote" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
       <option name="WORKING_DIRECTORY" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="7001" />
@@ -660,28 +534,30 @@
       <option name="OPEN_IN_BROWSER" value="true" />
       <option name="OPEN_IN_BROWSER_URL" value="/" />
       <option name="COMMON_VM_ARGUMENTS" value="" />
-      <option name="DOMAIN_PATH" value="" />
-      <option name="USER" value="weblogic" />
-      <option name="PASSWORD" value="weblogic" />
-      <option name="SERVER_NAME" value="myserver" />
-      <option name="DOMAIN_NAME" value="mydomain" />
-      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
-      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+    <configuration default="true" factoryName="Remote" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" factoryName="Applet" type="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <module name="" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.jsr45.JSR45ConfigurationFactory" factoryName="Remote">
+    <configuration default="true" factoryName="Remote" type="#com.intellij.j2ee.web.jsr45.JSR45ConfigurationFactory">
       <option name="WORKING_DIRECTORY" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="7001" />
@@ -694,14 +570,64 @@
       <option name="USE_WEBSPHERE51_LINEMAPPING_MODEL" value="false" />
       <option name="LOCAL_PORT" value="80" />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
+    <configuration default="true" factoryName="Local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+      <option name="WORKING_DIRECTORY" />
       <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="PORT" value="7001" />
+      <option name="LOCAL" value="true" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <configuration default="true" factoryName="Remote" type="WebLogic Instance">
+      <option name="WORKING_DIRECTORY" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="7001" />
+      <option name="LOCAL" value="false" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <option name="DOMAIN_PATH" value="" />
+      <option name="USER" value="weblogic" />
+      <option name="PASSWORD" value="weblogic" />
+      <option name="SERVER_NAME" value="myserver" />
+      <option name="DOMAIN_NAME" value="mydomain" />
+      <predefined_log_file enabled="true" id="WEBLOGIC_DOMAIN_LOG_FILE" />
+      <predefined_log_file enabled="true" id="WEBLOGIC_SERVER_LOG_FILE" />
+    </configuration>
+    <configuration default="true" factoryName="Local" type="WebLogic Instance">
+      <option name="WORKING_DIRECTORY" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="7001" />
+      <option name="LOCAL" value="true" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <option name="DOMAIN_PATH" value="" />
+      <option name="USER" value="weblogic" />
+      <option name="PASSWORD" value="weblogic" />
+      <option name="SERVER_NAME" value="myserver" />
+      <option name="DOMAIN_NAME" value="mydomain" />
+      <predefined_log_file enabled="true" id="WEBLOGIC_DOMAIN_LOG_FILE" />
+      <predefined_log_file enabled="true" id="WEBLOGIC_SERVER_LOG_FILE" />
+    </configuration>
+    <configuration default="true" factoryName="Local" type="#com.intellij.j2ee.web.jsr45.JSR45ConfigurationFactory">
+      <option name="WORKING_DIRECTORY" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="7001" />
+      <option name="LOCAL" value="true" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <option name="JSP_PACKAGE" value="" />
+      <option name="VM_OPTS" value="VM_OPTS" />
+      <option name="USE_WEBSPHERE51_LINEMAPPING_MODEL" value="false" />
+      <option name="LOCAL_PORT" value="80" />
+    </configuration>
+    <configuration default="true" enabled="false" factoryName="JUnit" merge="false" type="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -720,77 +646,25 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.jsr45.JSR45ConfigurationFactory" factoryName="Local">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="7001" />
-      <option name="LOCAL" value="true" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <option name="JSP_PACKAGE" value="" />
-      <option name="VM_OPTS" value="VM_OPTS" />
-      <option name="USE_WEBSPHERE51_LINEMAPPING_MODEL" value="false" />
-      <option name="LOCAL_PORT" value="80" />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" enabled="false" factoryName="Application" merge="false" type="Application">
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <module name="" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="7001" />
-      <option name="LOCAL" value="false" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-      <option name="BASE_DIRECTORY_NAME" value="" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="7001" />
-      <option name="LOCAL" value="true" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-      <option name="BASE_DIRECTORY_NAME" value="" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-    </configuration>
-    <configuration default="true" type="WebLogic Instance" factoryName="Local">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="7001" />
-      <option name="LOCAL" value="true" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <option name="DOMAIN_PATH" value="" />
-      <option name="USER" value="weblogic" />
-      <option name="PASSWORD" value="weblogic" />
-      <option name="SERVER_NAME" value="myserver" />
-      <option name="DOMAIN_NAME" value="mydomain" />
-      <predefined_log_file id="WEBLOGIC_DOMAIN_LOG_FILE" enabled="true" />
-      <predefined_log_file id="WEBLOGIC_SERVER_LOG_FILE" enabled="true" />
-    </configuration>
-    <configuration default="false" name="All Tests" type="JUnit" factoryName="JUnit" enabled="true" merge="false">
+    <configuration default="false" enabled="true" factoryName="JUnit" merge="false" name="All Tests" type="JUnit">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com" />
+      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -801,13 +675,25 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64841" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="JProfiler" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="false" name="BenchmarkTest.testSpeed" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <configuration default="false" enabled="false" factoryName="JUnit" merge="false" name="BenchmarkTest.testSpeed" type="JUnit">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -829,14 +715,72 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="false" name="BenchmarkTest.testEvaluations" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <configuration default="false" enabled="false" factoryName="JUnit" merge="false" name="BenchmarkTest.getEvaluations" type="JUnit">
+      <pattern value="com.sampullara.poker.*" />
+      <module name="PokerEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.BenchmarkTest" />
+      <option name="METHOD_NAME" value="getEvaluations" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="JProfiler" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="false" enabled="true" factoryName="JUnit" merge="false" name="HandRankTest" type="JUnit">
+      <pattern value="com.sampullara.poker.*" />
+      <module name="PokerEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.HandRankTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64793" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="false" enabled="false" factoryName="JUnit" merge="false" name="BenchmarkTest.getGameSpeed" type="JUnit">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sampullara.poker" />
       <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.BenchmarkTest" />
-      <option name="METHOD_NAME" value="testEvaluations" />
+      <option name="METHOD_NAME" value="getGameSpeed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -845,6 +789,70 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65034" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="JProfiler" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="false" enabled="false" factoryName="JUnit" merge="false" name="PrintTest" type="JUnit">
+      <pattern value="com.sampullara.poker.*" />
+      <module name="PokerEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.PrintTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65282" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="false" enabled="false" factoryName="JUnit" merge="false" name="HandTest" type="JUnit">
+      <pattern value="com.sampullara.poker.*" />
+      <module name="PokerEngine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sampullara.poker" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.HandTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
@@ -854,12 +862,17 @@
   </component>
   <component name="SQL">
     <general />
-    <databases savePasswords="false" encodePasswords="true" />
+    <databases encodePasswords="true" savePasswords="false" />
     <queries projectClassLoader="false" save="false" />
     <results primaryKeyCols="true" saveTableConfig="false">
       <rowLimit enabled="true" value="1000" />
-      <resizeColumns toHeader="true" toContent="true" />
+      <resizeColumns toContent="true" toHeader="true" />
     </results>
+  </component>
+  <component name="ScopeChooserConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl />
+    </option>
   </component>
   <component name="ScopeViewComponent">
     <subPane subId="Project">
@@ -872,6 +885,7 @@
     </subPane>
   </component>
   <component name="SelectInManager" />
+  <component name="ShelveChangesManager" />
   <component name="StarteamConfiguration">
     <option name="SERVER" value="" />
     <option name="PORT" value="49201" />
@@ -914,15 +928,14 @@
   <component name="SvnConfiguration">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
-    <option name="PROCESS_UNRESOLVED" value="false" />
     <option name="LAST_MERGED_REVISION" />
     <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="UPDATE_RECURSIVELY" value="true" />
     <option name="MERGE_DRY_RUN" value="false" />
-    <configuration useDefault="true">/Users/samp/.subversion</configuration>
+    <configuration useDefault="true">/Users/sam/.subversion</configuration>
     <upgradeMode>none</upgradeMode>
   </component>
-  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="60" annotateissues="false">
+  <component annotateissues="false" autoRefresh="false" enableIssueTracking="false" name="Talios.JiraConfigurationComponent" refreshTimeout="60" useExternalBrowser="false">
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -940,47 +953,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="817" extended-state="0" />
+    <frame extended-state="0" height="870" width="1611" x="68" y="73" />
     <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="21" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2976276" order="1" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" order="3" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" order="17" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="8" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="19" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1876348" order="3" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40694445" order="4" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
-      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="2" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="TCPMON" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="15" />
-      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
-      <window_info id="RSSPlugin" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="5" />
-      <window_info id="Gold Section" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="12" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="2" />
-      <window_info id="IdeaSpring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="13" />
-      <window_info id="Favorites" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="14" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
-      <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="16" />
-      <window_info id="Hibernate Tools" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="18" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="3" />
-      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
-      <window_info id="WebServices" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="20" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="7" />
+      <window_info active="false" anchor="left" auto_hide="false" id="UI Designer" internal_type="DOCKED" order="0" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="IDEtalk" internal_type="DOCKED" order="1" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="TODO" internal_type="DOCKED" order="9" type="DOCKED" visible="false" weight="0.32916668" />
+      <window_info active="true" anchor="left" auto_hide="false" id="Project" internal_type="DOCKED" order="1" type="DOCKED" visible="true" weight="0.29686502" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Find" internal_type="DOCKED" order="3" type="DOCKED" visible="false" weight="0.32916668" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Structure" internal_type="DOCKED" order="2" type="DOCKED" visible="false" weight="0.25" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Messages" internal_type="DOCKED" order="17" type="DOCKED" visible="false" weight="0.32916668" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Inspection" internal_type="DOCKED" order="8" type="DOCKED" visible="false" weight="0.4" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Module Dependencies" internal_type="DOCKED" order="6" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Dependency Viewer" internal_type="DOCKED" order="19" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Palette" internal_type="DOCKED" order="0" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Ant Build" internal_type="DOCKED" order="3" type="DOCKED" visible="false" weight="0.1876348" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Changes" internal_type="DOCKED" order="0" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Run" internal_type="DOCKED" order="4" type="DOCKED" visible="true" weight="0.40592784" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Hierarchy" internal_type="DOCKED" order="4" type="DOCKED" visible="false" weight="0.25" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Debug" internal_type="DOCKED" order="6" type="DOCKED" visible="false" weight="0.44166666" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Commander" internal_type="DOCKED" order="2" type="DOCKED" visible="false" weight="0.4" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="IDEtalk Messages" internal_type="DOCKED" order="1" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Version Control" internal_type="DOCKED" order="15" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Duplicates" internal_type="DOCKED" order="-1" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="RSSPlugin" internal_type="DOCKED" order="5" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="SQL" internal_type="DOCKED" order="11" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Gold Section" internal_type="DOCKED" order="12" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Regex" internal_type="DOCKED" order="10" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Message" internal_type="DOCKED" order="2" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="IdeaSpring" internal_type="DOCKED" order="13" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Favorites" internal_type="DOCKED" order="8" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Sequence" internal_type="DOCKED" order="14" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="Hibernate Tools" internal_type="DOCKED" order="10" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="BSFConsole" internal_type="DOCKED" order="16" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="left" auto_hide="false" id="simpleUML" internal_type="DOCKED" order="4" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="right" auto_hide="false" id="TCPMON" internal_type="DOCKED" order="7" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="JProfiler" internal_type="DOCKED" order="8" type="DOCKED" visible="false" weight="0.39444444" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="CheckStyle" internal_type="DOCKED" order="18" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="CVS" internal_type="DOCKED" order="21" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="left" auto_hide="false" id="Web" internal_type="DOCKED" order="3" type="DOCKED" visible="false" weight="0.25" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="EJB" internal_type="DOCKED" order="5" type="DOCKED" visible="false" weight="0.25" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="WebServices" internal_type="DOCKED" order="20" type="DOCKED" visible="false" weight="0.33" />
+      <window_info active="false" anchor="bottom" auto_hide="false" id="Cvs" internal_type="DOCKED" order="7" type="DOCKED" visible="false" weight="0.25" />
+      <window_info active="false" anchor="right" auto_hide="false" id="File View" internal_type="DOCKED" order="9" type="DOCKED" visible="false" weight="0.33" />
     </layout>
   </component>
   <component name="VCS.FileViewConfiguration">
@@ -995,11 +1010,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
-    <option name="PUT_FOCUS_INTO_COMMENT" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing a case that looked troublesome when I was going through the code. It wasn't, but this will make sure that this is taken care of." />
-    <option name="SAVE_LAST_COMMIT_MESSAGE" value="true" />
-    <option name="CHECKIN_DIALOG_SPLITTER_PROPORTION" value="0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Accidentally checked in a huge benchmark instead of the normal one." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1013,6 +1025,12 @@
     <MESSAGE value="Do some minor updates and checkin a benchmark to prepare for some optimization work." />
     <MESSAGE value="Added tests to increase code coverage and as a result found and fixed a bad bug with ranking full houses." />
     <MESSAGE value="Testing a case that looked troublesome when I was going through the code. It wasn't, but this will make sure that this is taken care of." />
+    <MESSAGE value="Optimize the deck creation so we don't keep creating new cards. Flyweight pattern essentially." />
+    <MESSAGE value="Some changes resulting from code analysis." />
+    <MESSAGE value="Double the performance of our hand evaluation system by replacing the HashMaps with array lookups.  Its too bad I had to do this.  It will be interesting to see what the improvement by going to 1.6 is for this change.  For the previous impl it was around 50%." />
+    <MESSAGE value="Remove lists and replace them with arrays." />
+    <MESSAGE value="Adding the optimizations turned up another bug where I had a problem with wheel straight flushes." />
+    <MESSAGE value="Accidentally checked in a huge benchmark instead of the normal one." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1032,7 +1050,6 @@
       <option name="RECURSIVE" value="false" />
     </CheckinOptions>
     <AddOptions>
-      <option name="COMMENT" value="" />
       <option name="STORE_ONLY_LATEST_VERSION" value="false" />
       <option name="CHECK_OUT_IMMEDIATELY" value="false" />
       <option name="FILE_TYPE" value="0" />
@@ -1050,7 +1067,6 @@
       <option name="RECURSIVE" value="false" />
       <option name="VERSION" />
     </GetOptions>
-    <VssConfigurableExcludedFilesTag />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
@@ -1062,23 +1078,15 @@
       <antCommandLine value="" />
       <runInBackground value="false" />
       <targetFilters>
-        <filter targetName="all" isVisible="true" />
-        <filter targetName="clean" isVisible="false" />
-        <filter targetName="clean.module.texassolitaire" isVisible="false" />
-        <filter targetName="compile.module.texassolitaire" isVisible="false" />
-        <filter targetName="compile.module.texassolitaire.production" isVisible="false" />
-        <filter targetName="compile.module.texassolitaire.tests" isVisible="false" />
-        <filter targetName="init" isVisible="false" />
-        <filter targetName="test" isVisible="false" />
+        <filter isVisible="true" targetName="all" />
+        <filter isVisible="false" targetName="clean" />
+        <filter isVisible="false" targetName="clean.module.texassolitaire" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire.production" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire.tests" />
+        <filter isVisible="false" targetName="init" />
+        <filter isVisible="false" targetName="test" />
       </targetFilters>
-      <treeView value="true" />
-      <verbose value="true" />
-      <viewClosedWhenNoErrors value="false" />
-    </buildFile>
-    <buildFile url="file://pokerengine.xml">
-      <antCommandLine value="" />
-      <runInBackground value="false" />
-      <targetFilters />
       <treeView value="true" />
       <verbose value="true" />
       <viewClosedWhenNoErrors value="false" />
@@ -1087,14 +1095,14 @@
       <antCommandLine value="" />
       <runInBackground value="false" />
       <targetFilters>
-        <filter targetName="all" isVisible="true" />
-        <filter targetName="clean" isVisible="true" />
-        <filter targetName="clean.module.texassolitaire" isVisible="true" />
-        <filter targetName="compile.module.texassolitaire" isVisible="true" />
-        <filter targetName="compile.module.texassolitaire.production" isVisible="true" />
-        <filter targetName="compile.module.texassolitaire.tests" isVisible="true" />
-        <filter targetName="init" isVisible="true" />
-        <filter targetName="test" isVisible="false" />
+        <filter isVisible="true" targetName="all" />
+        <filter isVisible="false" targetName="clean" />
+        <filter isVisible="false" targetName="clean.module.texassolitaire" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire.production" />
+        <filter isVisible="false" targetName="compile.module.texassolitaire.tests" />
+        <filter isVisible="false" targetName="init" />
+        <filter isVisible="false" targetName="test" />
       </targetFilters>
       <treeView value="true" />
       <verbose value="true" />
@@ -1112,142 +1120,107 @@
     <option name="myLastEditedConfigurable" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/LinkedHashMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="147" selection-end="147" vertical-scroll-proportion="0.07164179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/Map.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="151" selection-end="151" vertical-scroll-proportion="0.07164179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="921" selection-end="921" vertical-scroll-proportion="0.23053434">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="365" selection-end="365" vertical-scroll-proportion="0.104477614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/license.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="-0.06486487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="70" selection-end="70" vertical-scroll-proportion="0.032432433">
-          <folding>
-            <marker date="1174103454000" expanded="true" signature="559:910" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="992:1841" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="1050:1829" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="2092:2199" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="2886:2965" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="3014:3143" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="3203:3695" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="3759:3843" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="3893:4013" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="3949:4001" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="4068:4189" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="4124:4177" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="4540:5401" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="4857:5138" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="5190:5387" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="5255:5371" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="5601:6472" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="5926:6204" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="6260:6458" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="6326:6442" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="6550:6674" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="6735:6814" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="7086:7212" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="7243:7318" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="7864:9468" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="8031:8320" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="8195:8304" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="8492:8998" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="8886:8981" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="9029:9370" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="9074:9354" placeholder="..." />
-            <marker date="1174103454000" expanded="true" signature="9126:9198" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="515" column="27" selection-start="23128" selection-end="23128" vertical-scroll-proportion="15.346478">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.3243243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.25945947">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="18" line="14" selection-end="258" selection-start="258" vertical-scroll-proportion="0.34828496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/ArrayList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="440" selection-end="440" vertical-scroll-proportion="0.30422536">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="11" line="10" selection-end="440" selection-start="440" vertical-scroll-proportion="0.033333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/lang/Enum.class">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="21" line="23" selection-end="891" selection-start="891" vertical-scroll-proportion="0.63736266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/HashMap.class">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="99" line="97" selection-end="3890" selection-start="3890" vertical-scroll-proportion="0.33241758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/Collections.class">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="27" line="24" selection-end="1057" selection-start="1057" vertical-scroll-proportion="0.34084508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar!/java/util/List.class">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="17" line="5" selection-end="151" selection-start="151" vertical-scroll-proportion="0.12972973">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="32" line="59" selection-end="2137" selection-start="2137" vertical-scroll-proportion="1.4038461">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="26" line="1" selection-end="70" selection-start="70" vertical-scroll-proportion="0.03166227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="0" line="0" selection-end="0" selection-start="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="0" line="242" selection-end="10242" selection-start="10242" vertical-scroll-proportion="0.03084833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Card.java">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="19" line="10" selection-end="180" selection-start="180" vertical-scroll-proportion="0.23762377">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="1.0054054">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="19" line="14" selection-end="262" selection-start="262" vertical-scroll-proportion="0.2970297">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="285" selection-end="285" vertical-scroll-proportion="0.3243243">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="0" line="45" selection-end="1054" selection-start="1054" vertical-scroll-proportion="1.2029703">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="-10.121127">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="36" line="259" selection-end="7504" selection-start="7504" vertical-scroll-proportion="0.95049506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
+      <provider editor-type-id="text-editor" selected="true">
+        <state column="23" line="119" selection-end="3870" selection-start="3870" vertical-scroll-proportion="0.31188118">
           <folding />
         </state>
       </provider>

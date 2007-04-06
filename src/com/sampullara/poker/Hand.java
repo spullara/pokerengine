@@ -4,7 +4,6 @@
 package com.sampullara.poker;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,7 +13,7 @@ import java.util.List;
  * Time: 4:07:30 PM
  */
 public final class Hand {
-    private List<Card> cards;
+    private final List<Card> cards;
 
     public Hand() {
         cards = new ArrayList<Card>(2);
@@ -38,12 +37,25 @@ public final class Hand {
 
     public HandRank getHandRank(Board board) {
         // Create a new set of cards with all the cards in it sorted
-        List<Card> hand = new LinkedList<Card>();
-        hand.addAll(cards);
-        hand.addAll(board.getCards());
-        Collections.sort(hand, Collections.reverseOrder());
+        final List<Card> boardCards = board.getCards();
+        List<Card> hand = new ArrayList<Card>(boardCards.size() + cards.size());
+        addSorted(cards, hand);
+        addSorted(boardCards, hand);
 
         // Look for hands
         return new HandRank(hand);
+    }
+
+    private void addSorted(List<Card> cards, List<Card> hand) {
+        OUTER:
+        for (Card card : cards) {
+            for (int i = 0; i < hand.size(); i++) {
+                if (hand.get(i).compareTo(card) < 0) {
+                    hand.add(i, card);
+                    continue OUTER;
+                }
+            }
+            hand.add(card);
+        }
     }
 }

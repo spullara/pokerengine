@@ -13,9 +13,8 @@ import java.util.List;
  * Time: 4:00:43 PM
  */
 public final class Deck {
-    public static final int DECK_SIZE = 52;
-
-    public static final List<Card> deck;
+    private static final int DECK_SIZE = 52;
+    private static final List<Card> deck;
 
     static {
         deck = new ArrayList<Card>(DECK_SIZE);
@@ -26,7 +25,7 @@ public final class Deck {
         }
     }
 
-    private List<Card> cards;
+    private final List<Card> cards;
 
     /**
      * Creates an unshuffled deck of cards.

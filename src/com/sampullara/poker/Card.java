@@ -19,7 +19,7 @@ public final class Card implements Comparable<Card> {
     public enum Suit {
         CLUBS, DIAMONDS, HEARTS, SPADES;
 
-        private String[] suitStrings = {"c", "d", "h", "s"};
+        private final String[] suitStrings = {"c", "d", "h", "s"};
 
         public String toString() {
             return suitStrings[this.ordinal()];
@@ -29,7 +29,7 @@ public final class Card implements Comparable<Card> {
     public enum Rank {
         TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE;
 
-        private String[] rankStrings = {"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"};
+        private final String[] rankStrings = {"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"};
 
         public String toString() {
             return rankStrings[this.ordinal()];

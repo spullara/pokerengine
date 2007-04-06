@@ -12,7 +12,7 @@ import java.util.List;
  * Time: 4:19:41 PM
  */
 public final class Board {
-    private List<Card> cards;
+    private final List<Card> cards;
 
     public Board() {
         cards = new ArrayList<Card>(5);
