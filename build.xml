@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="PokerEngine" default="all">
+
+
+    <property file="build.properties"/>
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+    </patternset>
+
+    <!-- JDK definitions -->
+    <path id="jdk.classpath.java_version_1.5.0_02">
+        <fileset dir="${jdk.home.java_version_1.5.0_02}">
+            <include name="lib/deploy.jar"/>
+            <include name="../Classes/dt.jar"/>
+            <include name="../Classes/jce.jar"/>
+            <include name="lib/plugin.jar"/>
+            <include name="../Classes/charsets.jar"/>
+            <include name="../Classes/classes.jar"/>
+            <include name="../Classes/dt.jar"/>
+            <include name="../Classes/jce.jar"/>
+            <include name="../Classes/jconsole.jar"/>
+            <include name="../Classes/jsse.jar"/>
+            <include name="../Classes/laf.jar"/>
+            <include name="../Classes/ui.jar"/>
+            <include name="lib/ext/apple_provider.jar"/>
+            <include name="lib/ext/localedata.jar"/>
+            <include name="lib/ext/sunjce_provider.jar"/>
+        </fileset>
+    </path>
+
+    <property name="project.jdk.home" value="${jdk.home.java_version_1.5.0_02}"/>
+    <property name="project.jdk.classpath" value="jdk.classpath.java_version_1.5.0_02"/>
+
+
+    <!-- Global Libraries -->
+
+    <path id="library.junit-3.8.1.classpath">
+        <pathelement location="/Users/sam/Projects/BuildAndTest/Library/lib/junit-3.8.1.jar"/>
+    </path>
+
+
+    <!-- Application Server Libraries -->
+
+    <!-- Modules -->
+
+
+    <!-- Module TexasSolitaire -->
+
+    <dirname property="module.texassolitaire.basedir" file="${ant.file}"/>
+
+
+    <property name="module.jdk.home.texassolitaire" value="${project.jdk.home}"/>
+    <property name="module.jdk.classpath.texassolitaire" value="${project.jdk.classpath}"/>
+
+    <property name="compiler.args.texassolitaire" value="${compiler.args}"/>
+
+    <property name="texassolitaire.output.dir" value="${module.texassolitaire.basedir}/classes"/>
+    <property name="texassolitaire.testoutput.dir" value="${module.texassolitaire.basedir}/classes"/>
+
+    <path id="texassolitaire.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="texassolitaire.module.classpath">
+        <path refid="${module.jdk.classpath.texassolitaire}"/>
+        <path refid="library.junit-3.8.1.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.texassolitaire">
+        <exclude name=".svn/**"/>
+        <exclude name="com/.svn/**"/>
+        <exclude name="com/sampullara/.svn/**"/>
+        <exclude name="com/sampullara/poker/.svn/**"/>
+        <exclude name="com/sampullara/poker/games/.svn/**"/>
+        <exclude name=".svn/**"/>
+        <exclude name="com/.svn/**"/>
+        <exclude name="com/sampullara/.svn/**"/>
+        <exclude name="com/sampullara/poker/.svn/**"/>
+        <exclude name="com/sampullara/poker/games/.svn/**"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.texassolitaire">
+        <patternset refid="excluded.from.module.texassolitaire"/>
+    </patternset>
+
+    <path id="texassolitaire.module.sourcepath">
+        <dirset dir="${module.texassolitaire.basedir}">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+    <path id="texassolitaire.module.test.sourcepath">
+        <dirset dir="${module.texassolitaire.basedir}">
+            <include name="test"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.texassolitaire"
+            depends="compile.module.texassolitaire.production,compile.module.texassolitaire.tests"
+            description="compile module(s) TexasSolitaire"/>
+
+    <target name="compile.module.texassolitaire.production"
+            description="compile module(s) TexasSolitaire production classes">
+        <mkdir dir="${texassolitaire.output.dir}"/>
+        <javac destdir="${texassolitaire.output.dir}" debug="${compiler.debug}"
+               nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true"
+               executable="${module.jdk.home.texassolitaire}/bin/javac">
+            <compilerarg line="${compiler.args.texassolitaire}"/>
+            <bootclasspath refid="texassolitaire.module.bootclasspath"/>
+            <classpath refid="texassolitaire.module.classpath"/>
+            <src refid="texassolitaire.module.sourcepath"/>
+        </javac>
+        <copy todir="${texassolitaire.output.dir}">
+            <fileset dir="${module.texassolitaire.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.texassolitaire.tests" depends="compile.module.texassolitaire.production"
+            description="compile module(s) TexasSolitaire test classes" unless="skip.tests">
+        <mkdir dir="${texassolitaire.testoutput.dir}"/>
+        <javac destdir="${texassolitaire.testoutput.dir}" debug="${compiler.debug}"
+               nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true"
+               executable="${module.jdk.home.texassolitaire}/bin/javac">
+            <compilerarg line="${compiler.args.texassolitaire}"/>
+            <classpath refid="texassolitaire.module.classpath"/>
+            <classpath location="${texassolitaire.output.dir}"/>
+            <src refid="texassolitaire.module.test.sourcepath"/>
+        </javac>
+        <copy todir="${texassolitaire.testoutput.dir}">
+            <fileset dir="${module.texassolitaire.basedir}/test">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="clean.module.texassolitaire" description="cleanup module">
+        <delete dir="${texassolitaire.output.dir}"/>
+        <delete dir="${texassolitaire.testoutput.dir}"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <!-- Perform any build initialization in this target -->
+    </target>
+
+    <target name="clean" depends="clean.module.texassolitaire" description="cleanup all"/>
+
+    <target name="all" depends="init, clean, compile.module.texassolitaire, test" description="build all"/>
+
+
+    <property name="emma.dir" value="lib"/>
+    <path id="emma.lib">
+        <pathelement location="${emma.dir}/emma.jar"/>
+        <pathelement location="${emma.dir}/emma_ant.jar"/>
+    </path>
+
+    <path id="run.classpath">
+        <pathelement location="${texassolitaire.output.dir}"/>
+    </path>
+
+    <property name="coverage.out.dir" value="${module.texassolitaire.basedir}/test-coverage"/>
+    <property name="coverage.classes.dir" value="${module.texassolitaire.basedir}/coverage-classes"/>
+    <property name="testresults.out.dir" value="${module.texassolitaire.basedir}/test-results"/>
+    <property name="test.dir" value="${module.texassolitaire.basedir}/test"/>
+    <property name="src.dir" value="${module.texassolitaire.basedir}/src"/>
+
+    <taskdef resource="emma_ant.properties" classpathref="emma.lib"/>
+
+    <target name="test">
+        <mkdir dir="${coverage.out.dir}"/>
+        <mkdir dir="${coverage.classes.dir}"/>
+        <mkdir dir="${testresults.out.dir}"/>
+
+        <emma enabled="true">
+            <instr instrpathref="run.classpath" destdir="${coverage.classes.dir}"
+                   metadatafile="${coverage.out.dir}/metadata.emma" merge="true">
+                <filter excludes="*Test*"/>
+                <filter excludes="*Mock*"/>
+            </instr>
+        </emma>
+
+        <property name="emma.classes" refid="emma.lib"/>
+
+        <junit printsummary="true" fork="yes" forkmode="once" haltonfailure="no" failureproperty="tests.failed">
+            <jvmarg value="-Demma.coverage.out.file=${coverage.out.dir}/coverage.emma"/>
+            <classpath refid="texassolitaire.module.classpath"/>
+            <classpath location="${coverage.classes.dir}"/>
+            <classpath refid="run.classpath"/>
+            <classpath refid="emma.lib"/>
+            <formatter type="xml"/>
+            <batchtest todir="${testresults.out.dir}">
+                <fileset dir="${test.dir}" includes="**/*Test.java"/>
+            </batchtest>
+        </junit>
+
+        <emma enabled="true">
+            <report sourcepath="${src.dir}">
+                <fileset dir="${coverage.out.dir}">
+                    <include name="*.emma"/>
+                </fileset>
+                <html outfile="${coverage.out.dir}/coverage.html"/>
+                <xml outfile="${coverage.out.dir}/coverage.xml"/>
+            </report>
+        </emma>
+
+        <fail message="Build failed because of test failures." if="tests.failed"/>
+    </target>
+
+</project>
