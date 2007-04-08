@@ -96,7 +96,7 @@
         <mkdir dir="${pokerengine.output.dir}"/>
         <javac destdir="${pokerengine.output.dir}" debug="${compiler.debug}"
                nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true"
-               >
+                >
             <compilerarg line="${compiler.args.pokerengine}"/>
             <bootclasspath refid="pokerengine.module.bootclasspath"/>
             <classpath refid="pokerengine.module.classpath"/>
@@ -115,7 +115,7 @@
         <mkdir dir="${pokerengine.testoutput.dir}"/>
         <javac destdir="${pokerengine.testoutput.dir}" debug="${compiler.debug}"
                nowarn="${compiler.generate.no.warnings}" memoryMaximumSize="${compiler.max.memory}" fork="true"
-               >
+                >
             <compilerarg line="${compiler.args.pokerengine}"/>
             <classpath refid="pokerengine.module.classpath"/>
             <classpath location="${pokerengine.output.dir}"/>
@@ -203,8 +203,13 @@
     </target>
 
     <target name="benchjar" depends="init, clean, compile.module.pokerengine">
-       <jar manifest="manifest" basedir="classes" jarfile="bench.jar">
-          <zipfileset src="lib/junit.jar"/>
-       </jar>
+        <exec executable="svn" output="svninfo">
+            <arg value="info"/>
+        </exec>
+        <property file="svninfo"/>
+        <delete file="svninfo"/>
+        <jar manifest="manifest" basedir="classes" jarfile="bench-${Revision}.jar">
+            <zipfileset src="lib/junit.jar"/>
+        </jar>
     </target>
 </project>

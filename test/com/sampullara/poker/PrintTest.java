@@ -57,7 +57,7 @@ public class PrintTest extends TestCase {
         board.addCard(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
         board.addCard(new Card(Card.Rank.KING, Card.Suit.SPADES));
         board.addCard(new Card(Card.Rank.TWO, Card.Suit.DIAMONDS));
-        HandRank rank = hand.getHandRank(board);
+        HandRank rank = Evaluate.holdem(hand, board);
         if (!"[Ac, Ad, As, Kc, Kd]: FULLHOUSE".equals(rank.toString())) {
             fail("Not [Ac, Ad, As, Kc, Kd]: FULLHOUSE: " + rank);
         }

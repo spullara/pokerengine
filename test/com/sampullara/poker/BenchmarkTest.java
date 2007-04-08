@@ -48,7 +48,7 @@ public class BenchmarkTest extends TestCase {
             Hand winner = null;
             HandRank winningRank = null;
             for (Hand hand : hands) {
-                HandRank rank = hand.getHandRank(board);
+                HandRank rank = Evaluate.holdem(hand, board);
                 if (winner == null) {
                     winner = hand;
                     winningRank = rank;
@@ -95,17 +95,17 @@ public class BenchmarkTest extends TestCase {
         for (int i = 0; i < TOTAL; i++) {
             Hand hand = hands.get(i);
             Board board = boards.get(i);
-            HandRank rank = hand.getHandRank(board);
+            HandRank rank = Evaluate.holdem(hand, board);
         }
         for (int i = 0; i < TOTAL; i++) {
             Hand hand = hands.get(i);
             Board board = boards.get(i);
-            HandRank rank = hand.getHandRank(board);
+            HandRank rank = Evaluate.holdem(hand, board);
         }
         for (int i = 0; i < TOTAL; i++) {
             Hand hand = hands.get(i);
             Board board = boards.get(i);
-            HandRank rank = hand.getHandRank(board);
+            HandRank rank = Evaluate.holdem(hand, board);
         }
         long duration = System.currentTimeMillis() - start;
         return 3 * TOTAL * 1000 / duration;

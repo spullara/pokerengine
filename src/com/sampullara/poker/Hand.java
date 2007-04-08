@@ -35,27 +35,4 @@ public final class Hand {
         return sb.toString();
     }
 
-    public HandRank getHandRank(Board board) {
-        // Create a new set of cards with all the cards in it sorted
-        final List<Card> boardCards = board.getCards();
-        List<Card> hand = new ArrayList<Card>(boardCards.size() + cards.size());
-        addSorted(cards, hand);
-        addSorted(boardCards, hand);
-
-        // Look for hands
-        return new HandRank(hand);
-    }
-
-    private void addSorted(List<Card> cards, List<Card> hand) {
-        OUTER:
-        for (Card card : cards) {
-            for (int i = 0; i < hand.size(); i++) {
-                if (hand.get(i).compareTo(card) < 0) {
-                    hand.add(i, card);
-                    continue OUTER;
-                }
-            }
-            hand.add(card);
-        }
-    }
 }

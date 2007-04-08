@@ -58,12 +58,12 @@ public class HandTest extends TestCase
         hand6.addCard(new Card(Card.Rank.ACE, Card.Suit.SPADES));
 
         SortedSet<HandRank> handranks = new TreeSet<HandRank>();
-        handranks.add(hand1.getHandRank(board));
-        handranks.add(hand2.getHandRank(board));
-        handranks.add(hand3.getHandRank(board));
-        handranks.add(hand4.getHandRank(board));
-        handranks.add(hand5.getHandRank(board));
-        handranks.add(hand6.getHandRank(board));
+        handranks.add(Evaluate.holdem(hand1, board));
+        handranks.add(Evaluate.holdem(hand2, board));
+        handranks.add(Evaluate.holdem(hand3, board));
+        handranks.add(Evaluate.holdem(hand4, board));
+        handranks.add(Evaluate.holdem(hand5, board));
+        handranks.add(Evaluate.holdem(hand6, board));
     }
 
     public static Test suite() {
