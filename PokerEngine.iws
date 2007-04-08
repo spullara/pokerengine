@@ -29,16 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.iml" afterPath="$PROJECT_DIR$/PokerEngine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.ipr" afterPath="$PROJECT_DIR$/PokerEngine.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/OmahaTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.iws" afterPath="$PROJECT_DIR$/PokerEngine.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Hand.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Hand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/HandTest.java" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/HandTest.java" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
@@ -193,10 +185,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OmahaTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OmahaTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/OmahaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="13" selection-start="1708" selection-end="1708" vertical-scroll-proportion="1.575">
+            <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BenchmarkTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="28" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.25">
               <folding />
             </state>
           </provider>
@@ -521,14 +522,14 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RestoreUpdateTree" />
-  <component name="RunManager" selected="JUnit.OmahaTest">
-    <tempConfiguration default="false" name="OmahaTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+  <component name="RunManager" selected="JUnit.BenchmarkTest">
+    <tempConfiguration default="false" name="BenchmarkTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sampullara.poker" />
-      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.OmahaTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.BenchmarkTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -788,14 +789,14 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
-    <configuration default="false" name="BenchmarkTest.getGameSpeed" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <configuration default="false" name="BenchmarkTest.getHoldemGameSpeed" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sampullara.poker" />
       <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.BenchmarkTest" />
-      <option name="METHOD_NAME" value="getGameSpeed" />
+      <option name="METHOD_NAME" value="getHoldemGameSpeed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -970,14 +971,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="22" width="1434" height="820" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="21" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" order="9" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2967509" order="1" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2967509" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" order="3" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" order="17" />
@@ -1175,13 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="48" selection-start="3484" selection-end="3484" vertical-scroll-proportion="0.54959786">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="58" selection-start="1229" selection-end="1229" vertical-scroll-proportion="1.2067039">
@@ -1242,7 +1236,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/OmahaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1708" selection-end="1708" vertical-scroll-proportion="1.575">
+        <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="28" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.25">
           <folding />
         </state>
       </provider>

@@ -19,10 +19,10 @@ public class BenchmarkTest extends TestCase {
     private static int ITERATIONS = 100000;
 
     public void testGameSpeed() {
-        getGameSpeed();
+        getHoldemGameSpeed();
     }
 
-    private long getGameSpeed() {
+    private long getHoldemGameSpeed() {
         long start = System.currentTimeMillis();
         for (int i = 0; i < ITERATIONS; i++) {
             Deck deck = new Deck();
@@ -62,6 +62,58 @@ public class BenchmarkTest extends TestCase {
         }
         long duration = System.currentTimeMillis() - start;
         return ITERATIONS * 1000 / duration;
+    }
+
+    public void testOmahaGameSpeed() {
+        getOmahaGameSpeed();
+    }
+
+    private long getOmahaGameSpeed() {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < ITERATIONS/100; i++) {
+            Deck deck = new Deck();
+            deck.shuffle();
+            List<Hand> hands = new ArrayList<Hand>(10);
+            for (int j = 0; j < 10; j++) {
+                Hand hand = new Hand();
+                hand.addCard(deck.deal());
+                hands.add(hand);
+            }
+            for (int j = 0; j < 10; j++) {
+                hands.get(j).addCard(deck.deal());
+            }
+            for (int j = 0; j < 10; j++) {
+                hands.get(j).addCard(deck.deal());
+            }
+            for (int j = 0; j < 10; j++) {
+                hands.get(j).addCard(deck.deal());
+            }
+            Board board = new Board();
+            deck.burn();
+            board.addCard(deck.deal());
+            board.addCard(deck.deal());
+            board.addCard(deck.deal());
+            deck.burn();
+            board.addCard(deck.deal());
+            deck.burn();
+            board.addCard(deck.deal());
+            Hand winner = null;
+            HandRank winningRank = null;
+            for (Hand hand : hands) {
+                HandRank rank = Evaluate.omaha(hand, board);
+                if (winner == null) {
+                    winner = hand;
+                    winningRank = rank;
+                } else {
+                    if (winningRank.compareTo(rank) < 0) {
+                        winner = hand;
+                        winningRank = rank;
+                    }
+                }
+            }
+        }
+        long duration = System.currentTimeMillis() - start;
+        return ITERATIONS / 100 * 1000 / duration;
     }
 
     private static int TOTAL = 100000;
@@ -120,21 +172,25 @@ public class BenchmarkTest extends TestCase {
         TOTAL = 200000;
         final int[] games = new int[1];
         final int[] ranks = new int[1];
+        final int[] omaha = new int[1];
         ExecutorService executor = Executors.newFixedThreadPool(cpus);
         for (int i = 0; i < cpus; i++) {
             executor.submit(new Runnable() {
                 public void run() {
                     BenchmarkTest benchmark = new BenchmarkTest();
-                    long g = benchmark.getGameSpeed();
+                    long g = benchmark.getHoldemGameSpeed();
                     long r = benchmark.getEvaluations();
+                    long o = benchmark.getOmahaGameSpeed();
                     games[0] += g;
                     ranks[0] += r;
+                    omaha[0] += o;
                 }
             });
         }
         executor.shutdown();
         executor.awaitTermination(1000, TimeUnit.SECONDS);
-        System.out.println(games[0] + " games/second");
-        System.out.println(ranks[0] + " ranks/second");
+        System.out.println(games[0] + " holdem games/second");
+        System.out.println(ranks[0] + " holdem ranks/second");
+        System.out.println(omaha[0] + " omaha games/second");
     }
 }
