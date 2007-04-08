@@ -188,7 +188,7 @@
       <file leaf-file-name="OmahaTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/OmahaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0375">
+            <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.017830608">
               <folding />
             </state>
           </provider>
@@ -197,7 +197,7 @@
       <file leaf-file-name="BenchmarkTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="28" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.25">
+            <state line="72" column="41" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0653789">
               <folding />
             </state>
           </provider>
@@ -206,7 +206,7 @@
       <file leaf-file-name="Evaluate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="54" selection-start="319" selection-end="319" vertical-scroll-proportion="-0.4125">
+            <state line="14" column="54" selection-start="319" selection-end="319" vertical-scroll-proportion="-0.1961367">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -988,7 +988,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1876348" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47856155" order="4" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41908714" order="4" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="2" />
@@ -1227,7 +1227,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="54" selection-start="319" selection-end="319" vertical-scroll-proportion="-0.4125">
+        <state line="14" column="54" selection-start="319" selection-end="319" vertical-scroll-proportion="-0.1961367">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1236,14 +1236,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/OmahaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0375">
+        <state line="1" column="81" selection-start="30" selection-end="30" vertical-scroll-proportion="0.017830608">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/BenchmarkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="28" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.25">
+        <state line="72" column="41" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0653789">
           <folding />
         </state>
       </provider>

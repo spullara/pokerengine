@@ -70,7 +70,7 @@ public class BenchmarkTest extends TestCase {
 
     private long getOmahaGameSpeed() {
         long start = System.currentTimeMillis();
-        for (int i = 0; i < ITERATIONS/100; i++) {
+        for (int i = 0; i < ITERATIONS/50; i++) {
             Deck deck = new Deck();
             deck.shuffle();
             List<Hand> hands = new ArrayList<Hand>(10);
@@ -113,7 +113,7 @@ public class BenchmarkTest extends TestCase {
             }
         }
         long duration = System.currentTimeMillis() - start;
-        return ITERATIONS / 100 * 1000 / duration;
+        return ITERATIONS / 50 * 1000 / duration;
     }
 
     private static int TOTAL = 100000;
