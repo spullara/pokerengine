@@ -29,14 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Deck.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Deck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Cards.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Cards.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PokerEngine.iws" afterPath="$PROJECT_DIR$/PokerEngine.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/HandRank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Card.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Card.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java" afterPath="$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java" afterPath="$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
@@ -66,7 +60,7 @@
     <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.es" NAME="All Tests" MODIFIED="1174106012076">
       <FILTER>com.sampullara.poker.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.sampullara.poker.es" NAME="All Tests" MODIFIED="1176078186080">
+    <SUITE FILE_PATH="/Users/samp/Library/Caches/IntelliJIDEA60/coverage/PokerEngine$com.sampullara.poker.es" NAME="All Tests" MODIFIED="1176079187899">
       <FILTER>com.sampullara.poker.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="/Users/sam/Library/Caches/IntelliJIDEA70/coverage/PokerEngine$All Tests$com.sampullara.poker.es" NAME="All Tests" MODIFIED="1174242527430">
@@ -203,7 +197,7 @@
       <file leaf-file-name="Cards.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Cards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="471" selection-end="471" vertical-scroll-proportion="0.76033056">
+            <state line="26" column="20" selection-start="471" selection-end="471" vertical-scroll-proportion="0.56198347">
               <folding />
             </state>
           </provider>
@@ -247,10 +241,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluate.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Evaluate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="32" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.3939394">
+            <state line="7" column="3" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.355372">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,10 +252,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PrintTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.44252872">
+            <state line="60" column="32" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.74712646">
               <folding />
             </state>
           </provider>
@@ -584,15 +578,15 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RestoreUpdateTree" />
-  <component name="RunManager" selected="JUnit.All Tests">
-    <tempConfiguration default="false" name="OmahaTest.testFullHouse" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+  <component name="RunManager" selected="JUnit.PrintTest.testHandRankPrint">
+    <tempConfiguration default="false" name="PrintTest.testHandRankPrint" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <pattern value="com.sampullara.poker.*" />
       <module name="PokerEngine" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sampullara.poker" />
-      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.OmahaTest" />
-      <option name="METHOD_NAME" value="testFullHouse" />
+      <option name="MAIN_CLASS_NAME" value="com.sampullara.poker.PrintTest" />
+      <option name="METHOD_NAME" value="testHandRankPrint" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -601,13 +595,7 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54206" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
@@ -1038,7 +1026,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="22" width="1434" height="820" extended-state="0" />
+    <frame x="-13" y="23" width="1434" height="820" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -1046,7 +1034,7 @@
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" order="9" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2967509" order="1" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2967509" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" order="3" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" order="17" />
@@ -1056,7 +1044,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1876348" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41908714" order="4" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41908714" order="4" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="2" />
@@ -1258,13 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.44252872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="21" selection-start="2976" selection-end="2976" vertical-scroll-proportion="1.4903581">
@@ -1288,13 +1269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Cards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="471" selection-end="471" vertical-scroll-proportion="0.76033056">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/HandRankTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="26" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.62931037">
@@ -1304,10 +1278,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Evaluate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.3939394">
+        <state line="7" column="3" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.355372">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sampullara/poker/Cards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="471" selection-end="471" vertical-scroll-proportion="0.56198347">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/sampullara/poker/PrintTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="32" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.74712646">
+          <folding />
         </state>
       </provider>
     </entry>
