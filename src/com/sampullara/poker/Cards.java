@@ -4,7 +4,6 @@
 package com.sampullara.poker;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -20,8 +19,12 @@ public class Cards extends ArrayList<Card> {
     public Cards() {
     }
 
-    public List<Card> getCards() {
-        return this;
+    public Cards(int size) {
+        super(size);
+    }
+
+    public Cards(Cards deck) {
+        super(deck);
     }
 
     public String toString() {

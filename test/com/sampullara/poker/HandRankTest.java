@@ -41,7 +41,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFlush() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.HEARTS));
@@ -52,7 +52,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFlush2() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.HEARTS));
@@ -75,7 +75,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraightFlush1() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.SIX, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FOUR, Card.Suit.HEARTS));
@@ -86,7 +86,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraightFlush2() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
@@ -111,8 +111,8 @@ public class HandRankTest extends TestCase {
 
     private HandRank getQuads2() {
         HandRank handRank;
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.KING, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.CLUBS));
@@ -124,8 +124,8 @@ public class HandRankTest extends TestCase {
 
     private HandRank getQuads3() {
         HandRank handRank;
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.KING, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.SIX, Card.Suit.HEARTS));
@@ -140,7 +140,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getQuads1() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.SPADES));
@@ -169,8 +169,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFullHouse2() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
@@ -181,8 +181,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFullHouse3() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.THREE, Card.Suit.HEARTS));
@@ -195,8 +195,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFullHouse4() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.THREE, Card.Suit.HEARTS));
@@ -209,8 +209,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFullHouse5() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.THREE, Card.Suit.HEARTS));
@@ -224,7 +224,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFullHouse1() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.SPADES));
@@ -253,7 +253,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraight1() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.SIX, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FOUR, Card.Suit.CLUBS));
@@ -264,7 +264,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraight2() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.SIX, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FOUR, Card.Suit.SPADES));
@@ -276,7 +276,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraight3() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.EIGHT, Card.Suit.DIAMONDS));
@@ -289,7 +289,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraight4() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.EIGHT, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.SEVEN, Card.Suit.DIAMONDS));
@@ -302,7 +302,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getStraight5() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.EIGHT, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.SEVEN, Card.Suit.DIAMONDS));
@@ -315,7 +315,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getWheel() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.SPADES));
         cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
@@ -327,7 +327,7 @@ public class HandRankTest extends TestCase {
     }
 
     public void testThreeOfAKind() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.SPADES));
@@ -344,9 +344,9 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTrips2() {
-        List<Card> cards;
+        Cards cards;
         HandRank handRank;
-        cards = new ArrayList<Card>(5);
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
@@ -357,8 +357,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTrips1() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
@@ -369,7 +369,7 @@ public class HandRankTest extends TestCase {
     }
 
     public void testTwoPair() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.EIGHT, Card.Suit.SPADES));
@@ -392,9 +392,9 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTwoPair2() {
-        List<Card> cards;
+        Cards cards;
         HandRank handRank;
-        cards = new ArrayList<Card>(5);
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.KING, Card.Suit.HEARTS));
@@ -405,8 +405,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTwoPair1() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.SPADES));
@@ -417,8 +417,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTwoPair3() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.SPADES));
@@ -430,8 +430,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getTwoPair4() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.SPADES));
@@ -449,7 +449,7 @@ public class HandRankTest extends TestCase {
     }
 
     public void testPair() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.SPADES));
@@ -463,7 +463,7 @@ public class HandRankTest extends TestCase {
         handRank = getPair2();
         rank = handRank.getRank();
         if (rank != HandRank.Rank.PAIR) fail("This should be a pair, instead it is a " + rank);
-        cards = new ArrayList<Card>(5);
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
@@ -474,9 +474,9 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getPair2() {
-        List<Card> cards;
+        Cards cards;
         HandRank handRank;
-        cards = new ArrayList<Card>(5);
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
@@ -487,8 +487,8 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getPair1() {
-        List<Card> cards;
-        cards = new ArrayList<Card>(5);
+        Cards cards;
+        cards = new Cards(5);
         cards.add(new Card(Card.Rank.QUEEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
         cards.add(new Card(Card.Rank.JACK, Card.Suit.SPADES));
@@ -505,7 +505,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getHigh() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.NINE, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.SIX, Card.Suit.SPADES));
@@ -516,7 +516,7 @@ public class HandRankTest extends TestCase {
     }
 
     private HandRank getFourOfAKind() {
-        List<Card> cards = new ArrayList<Card>(5);
+        Cards cards = new Cards(5);
         cards.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.CLUBS));
         cards.add(new Card(Card.Rank.TEN, Card.Suit.SPADES));

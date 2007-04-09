@@ -3,8 +3,8 @@
  */
 package com.sampullara.poker;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * User: sam
@@ -106,9 +106,9 @@ public final class Card implements Comparable<Card> {
         return "" + rank + suit;
     }
 
-    public static List<Card> parse(String string) {
+    public static Cards parse(String string) {
         int length = string.length();
-        List<Card> cards = new ArrayList<Card>(length / 2);
+        Cards cards = new Cards();
         for (int i = 0; i < length; i += 2) {
             cards.add(new Card(Rank.parse(string.substring(i, i + 1)), Suit.parse(string.substring(i + 1, i + 2))));
         }

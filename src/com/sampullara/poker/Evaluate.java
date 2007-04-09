@@ -1,7 +1,7 @@
 package com.sampullara.poker;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,10 +15,10 @@ public class Evaluate {
     public static HandRank omaha(Cards hand, Cards board) {
         // In Omaha we must use 2 cards from our hand
         HandRank best = null;
-        List<List<Card>> boardSubsets = choose3(board.getCards());
-        List<List<Card>> handSubsets = choose2(hand.getCards());
-        for (List<Card> boardCards : boardSubsets) {
-            for (List<Card> handCards : handSubsets) {
+        List<Cards> boardSubsets = choose3(board);
+        List<Cards> handSubsets = choose2(hand);
+        for (Cards boardCards : boardSubsets) {
+            for (Cards handCards : handSubsets) {
                 HandRank hr = Evaluate.defaultEvaluate(handCards, boardCards);
                 if (best == null || hr.compareTo(best) > 1) {
                     best = hr;
@@ -28,19 +28,19 @@ public class Evaluate {
         return best;
     }
 
-    private static List<List<Card>> choose3(List<Card> cards) {
+    private static List<Cards> choose3(Cards cards) {
         // Given a list of cards, give me back a list of the
         // complete list of subsets of size num
         int size = cards.size();
-        List<List<Card>> subsets = new ArrayList<List<Card>>();
+        List<Cards> subsets = new ArrayList<Cards>();
         for (int i1 = 0; i1 < size - 2; i1++) {
-            List<Card> subset1 = new ArrayList<Card>();
+            Cards subset1 = new Cards();
             subset1.add(cards.get(i1));
             for (int i2 = i1 + 1; i2 < size - 1; i2++) {
-                List<Card> subset2 = new ArrayList<Card>(subset1);
+                Cards subset2 = new Cards(subset1);
                 subset2.add(cards.get(i2));
                 for (int i3 = i2 + 1; i3 < size; i3++) {
-                    List<Card> subset3 = new ArrayList<Card>(subset2);
+                    Cards subset3 = new Cards(subset2);
                     subset3.add(cards.get(i3));
                     subsets.add(subset3);
                 }
@@ -49,16 +49,16 @@ public class Evaluate {
         return subsets;
     }
 
-    private static List<List<Card>> choose2(List<Card> cards) {
+    private static List<Cards> choose2(Cards cards) {
         // Given a list of cards, give me back a list of the
         // complete list of subsets of size num
         int size = cards.size();
-        List<List<Card>> subsets = new ArrayList<List<Card>>();
+        List<Cards> subsets = new ArrayList<Cards>();
         for (int i1 = 0; i1 < size - 1; i1++) {
-            List<Card> subset = new ArrayList<Card>();
+            Cards subset = new Cards();
             subset.add(cards.get(i1));
             for (int i2 = i1 + 1; i2 < size; i2++) {
-                List<Card> subset1 = new ArrayList<Card>(subset);
+                Cards subset1 = new Cards(subset);
                 subset1.add(cards.get(i2));
                 subsets.add(subset1);
             }
@@ -67,14 +67,12 @@ public class Evaluate {
     }
 
     public static HandRank holdem(Cards hand, Cards board) {
-        List<Card> cardsInHand = hand.getCards();
-        List<Card> boardCards = board.getCards();
-        return defaultEvaluate(cardsInHand, boardCards);
+        return defaultEvaluate(hand, board);
     }
 
-    private static HandRank defaultEvaluate(List<Card> cardsInHand, List<Card> boardCards) {
+    private static HandRank defaultEvaluate(Cards cardsInHand, Cards boardCards) {
         // Create a new set of cards with all the cards in it sorted
-        List<Card> cards = new ArrayList<Card>(boardCards.size() + cardsInHand.size());
+        Cards cards = new Cards(boardCards.size() + cardsInHand.size());
         addSorted(cardsInHand, cards);
         addSorted(boardCards, cards);
 
@@ -82,7 +80,7 @@ public class Evaluate {
         return new HandRank(cards);
     }
 
-    static void addSorted(List<Card> cards, List<Card> hand) {
+    static void addSorted(Cards cards, Cards hand) {
         OUTER:
         for (Card card : cards) {
             for (int i = 0; i < hand.size(); i++) {

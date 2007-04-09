@@ -14,10 +14,10 @@ import java.util.List;
  */
 public final class Deck {
     private static final int DECK_SIZE = 52;
-    private static final List<Card> deck;
+    private static final Cards deck;
 
     static {
-        deck = new ArrayList<Card>(DECK_SIZE);
+        deck = new Cards(DECK_SIZE);
         for (Card.Suit suit : Card.Suit.values()) {
             for (Card.Rank rank : Card.Rank.values()) {
                 deck.add(new Card(rank, suit));
@@ -25,13 +25,13 @@ public final class Deck {
         }
     }
 
-    private final List<Card> cards;
+    private final Cards cards;
 
     /**
      * Creates an unshuffled deck of cards.
      */
     public Deck() {
-        cards = new ArrayList<Card>(deck);
+        cards = new Cards(deck);
     }
 
     public void shuffle() {

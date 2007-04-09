@@ -15,8 +15,8 @@ public final class HandRank implements Comparable<HandRank> {
     private static final int NUM_SUITS = Card.Suit.values().length;
     private static final int NUM_RANKS = Card.Rank.values().length;
 
-    private final List<Card> hand;
-    private final List<Card> fiveCardHand;
+    private final Cards hand;
+    private final Cards fiveCardHand;
     private Rank rank = Rank.HIGH;
 
     public String toString() {
@@ -32,8 +32,8 @@ public final class HandRank implements Comparable<HandRank> {
         if (compare != 0) {
             return compare;
         }
-        List<Card> myHand = getHand();
-        List<Card> theirHand = handRank.getHand();
+        Cards myHand = getHand();
+        Cards theirHand = handRank.getHand();
         for (int i = 0; i < 5; i++) {
             if (myHand.size() > i) {
                 compare = myHand.get(i).compareTo(theirHand.get(i));
@@ -53,9 +53,9 @@ public final class HandRank implements Comparable<HandRank> {
      *
      * @param hand The hand must be sorted from highest to lowest rank.
      */
-    public HandRank(List<Card> hand) {
+    public HandRank(Cards hand) {
         this.hand = hand;
-        fiveCardHand = new ArrayList<Card>(5);
+        fiveCardHand = new Cards(5);
         evaluate();
     }
 
@@ -63,7 +63,7 @@ public final class HandRank implements Comparable<HandRank> {
         return rank;
     }
 
-    private List<Card> getHand() {
+    private Cards getHand() {
         return fiveCardHand;
     }
 
@@ -330,7 +330,7 @@ public final class HandRank implements Comparable<HandRank> {
 
     // This would have been a good place to use a closure.  Make sure that this
     // method changes in sync with the other version
-    private static Card checkStraight(List<Card> hand, int[] inarow) {
+    private static Card checkStraight(Cards hand, int[] inarow) {
         // This is the value of the straight
         Card firstCard = null;
         // Keep track of the last card so we can skip over pairs and determine continuity

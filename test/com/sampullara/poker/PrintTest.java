@@ -26,12 +26,11 @@ public class PrintTest extends TestCase {
         if (!"AcAd".equals(hand.toString())) {
             fail("Not AcAd: " + hand);
         }
-        List<Card> cards = hand.getCards();
-        Card ac = cards.get(0);
+        Card ac = hand.get(0);
         if (!"Ac".equals(ac.toString())) {
             fail("Not Ac: " + ac);
         }
-        Card ad = cards.get(1);
+        Card ad = hand.get(1);
         if (!"Ad".equals(ad.toString())) {
             fail("Not Ad: " + ac);
         }
