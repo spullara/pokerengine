@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class Evaluate {
 
-    public static HandRank omaha(Hand hand, Board board) {
+    public static HandRank omaha(Cards hand, Cards board) {
         // In Omaha we must use 2 cards from our hand
         HandRank best = null;
         List<List<Card>> boardSubsets = choose3(board.getCards());
@@ -66,7 +66,7 @@ public class Evaluate {
         return subsets;
     }
 
-    public static HandRank holdem(Hand hand, Board board) {
+    public static HandRank holdem(Cards hand, Cards board) {
         List<Card> cardsInHand = hand.getCards();
         List<Card> boardCards = board.getCards();
         return defaultEvaluate(cardsInHand, boardCards);

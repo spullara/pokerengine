@@ -20,9 +20,9 @@ public class PrintTest extends TestCase {
     }
 
     public void testHandPrint() {
-        Hand hand = new Hand();
-        hand.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
-        hand.addCard(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
+        Cards hand = new Cards();
+        hand.add(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
+        hand.add(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
         if (!"AcAd".equals(hand.toString())) {
             fail("Not AcAd: " + hand);
         }
@@ -38,25 +38,25 @@ public class PrintTest extends TestCase {
     }
 
     public void testBoardPrint() {
-        Board board = new Board();
-        board.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
-        board.addCard(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
-        board.addCard(new Card(Card.Rank.TWO, Card.Suit.CLUBS));
+        Cards board = new Cards();
+        board.add(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
+        board.add(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
+        board.add(new Card(Card.Rank.TWO, Card.Suit.CLUBS));
         if (!"AcAd2c".equals(board.toString())) {
-            fail("Board not AcAd2c: " + board);
+            fail("Cards not AcAd2c: " + board);
         }
     }
 
     public void testHandRankPrint() {
-        Hand hand = new Hand();
-        hand.addCard(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
-        hand.addCard(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
-        Board board = new Board();
-        board.addCard(new Card(Card.Rank.ACE, Card.Suit.SPADES));
-        board.addCard(new Card(Card.Rank.KING, Card.Suit.CLUBS));
-        board.addCard(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
-        board.addCard(new Card(Card.Rank.KING, Card.Suit.SPADES));
-        board.addCard(new Card(Card.Rank.TWO, Card.Suit.DIAMONDS));
+        Cards hand = new Cards();
+        hand.add(new Card(Card.Rank.ACE, Card.Suit.CLUBS));
+        hand.add(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
+        Cards board = new Cards();
+        board.add(new Card(Card.Rank.ACE, Card.Suit.SPADES));
+        board.add(new Card(Card.Rank.KING, Card.Suit.CLUBS));
+        board.add(new Card(Card.Rank.KING, Card.Suit.DIAMONDS));
+        board.add(new Card(Card.Rank.KING, Card.Suit.SPADES));
+        board.add(new Card(Card.Rank.TWO, Card.Suit.DIAMONDS));
         HandRank rank = Evaluate.holdem(hand, board);
         if (!"[Ac, Ad, As, Kc, Kd]: FULLHOUSE".equals(rank.toString())) {
             fail("Not [Ac, Ad, As, Kc, Kd]: FULLHOUSE: " + rank);

@@ -12,27 +12,23 @@ import java.util.List;
  * Date: Apr 2, 2005
  * Time: 4:07:30 PM
  */
-public final class Hand {
-    private final List<Card> cards;
-
-    public Hand() {
-        cards = new ArrayList<Card>(2);
+public class Cards extends ArrayList<Card> {
+    public Cards(String string) {
+        addAll(Card.parse(string));
     }
 
-    public void addCard(Card card) {
-        cards.add(card);
+    public Cards() {
     }
 
     public List<Card> getCards() {
-        return cards;
+        return this;
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (Card card : cards) {
+        for (Card card : this) {
             sb.append(card.toString());
         }
         return sb.toString();
     }
-
 }

@@ -11,7 +11,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
- * Hand Tester.
+ * Cards Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -32,30 +32,30 @@ public class HandTest extends TestCase
     }
 
     public void testGetHandRank() throws Exception {
-        Board board = new Board();
-        board.addCard(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
-        board.addCard(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
-        board.addCard(new Card(Card.Rank.NINE, Card.Suit.HEARTS));
-        board.addCard(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
-        board.addCard(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
-        Hand hand1 = new Hand();
-        hand1.addCard(new Card(Card.Rank.EIGHT, Card.Suit.HEARTS));
-        hand1.addCard(new Card(Card.Rank.SEVEN, Card.Suit.HEARTS));
-        Hand hand2 = new Hand();
-        hand2.addCard(new Card(Card.Rank.EIGHT, Card.Suit.DIAMONDS));
-        hand2.addCard(new Card(Card.Rank.SEVEN, Card.Suit.DIAMONDS));
-        Hand hand3 = new Hand();
-        hand3.addCard(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
-        hand3.addCard(new Card(Card.Rank.SEVEN, Card.Suit.CLUBS));
-        Hand hand4 = new Hand();
-        hand4.addCard(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
-        hand4.addCard(new Card(Card.Rank.SEVEN, Card.Suit.SPADES));
-        Hand hand5 = new Hand();
-        hand5.addCard(new Card(Card.Rank.KING, Card.Suit.HEARTS));
-        hand5.addCard(new Card(Card.Rank.SIX, Card.Suit.SPADES));
-        Hand hand6 = new Hand();
-        hand6.addCard(new Card(Card.Rank.JACK, Card.Suit.CLUBS));
-        hand6.addCard(new Card(Card.Rank.ACE, Card.Suit.SPADES));
+        Cards board = new Cards();
+        board.add(new Card(Card.Rank.TEN, Card.Suit.HEARTS));
+        board.add(new Card(Card.Rank.JACK, Card.Suit.HEARTS));
+        board.add(new Card(Card.Rank.NINE, Card.Suit.HEARTS));
+        board.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
+        board.add(new Card(Card.Rank.ACE, Card.Suit.HEARTS));
+        Cards hand1 = new Cards();
+        hand1.add(new Card(Card.Rank.EIGHT, Card.Suit.HEARTS));
+        hand1.add(new Card(Card.Rank.SEVEN, Card.Suit.HEARTS));
+        Cards hand2 = new Cards();
+        hand2.add(new Card(Card.Rank.EIGHT, Card.Suit.DIAMONDS));
+        hand2.add(new Card(Card.Rank.SEVEN, Card.Suit.DIAMONDS));
+        Cards hand3 = new Cards();
+        hand3.add(new Card(Card.Rank.JACK, Card.Suit.DIAMONDS));
+        hand3.add(new Card(Card.Rank.SEVEN, Card.Suit.CLUBS));
+        Cards hand4 = new Cards();
+        hand4.add(new Card(Card.Rank.ACE, Card.Suit.DIAMONDS));
+        hand4.add(new Card(Card.Rank.SEVEN, Card.Suit.SPADES));
+        Cards hand5 = new Cards();
+        hand5.add(new Card(Card.Rank.KING, Card.Suit.HEARTS));
+        hand5.add(new Card(Card.Rank.SIX, Card.Suit.SPADES));
+        Cards hand6 = new Cards();
+        hand6.add(new Card(Card.Rank.JACK, Card.Suit.CLUBS));
+        hand6.add(new Card(Card.Rank.ACE, Card.Suit.SPADES));
 
         SortedSet<HandRank> handranks = new TreeSet<HandRank>();
         handranks.add(Evaluate.holdem(hand1, board));

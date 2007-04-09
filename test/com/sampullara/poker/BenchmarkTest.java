@@ -27,27 +27,27 @@ public class BenchmarkTest extends TestCase {
         for (int i = 0; i < ITERATIONS; i++) {
             Deck deck = new Deck();
             deck.shuffle();
-            List<Hand> hands = new ArrayList<Hand>(10);
+            List<Cards> hands = new ArrayList<Cards>(10);
             for (int j = 0; j < 10; j++) {
-                Hand hand = new Hand();
-                hand.addCard(deck.deal());
+                Cards hand = new Cards();
+                hand.add(deck.deal());
                 hands.add(hand);
             }
             for (int j = 0; j < 10; j++) {
-                hands.get(j).addCard(deck.deal());
+                hands.get(j).add(deck.deal());
             }
-            Board board = new Board();
+            Cards board = new Cards();
             deck.burn();
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
-            Hand winner = null;
+            board.add(deck.deal());
+            Cards winner = null;
             HandRank winningRank = null;
-            for (Hand hand : hands) {
+            for (Cards hand : hands) {
                 HandRank rank = Evaluate.holdem(hand, board);
                 if (winner == null) {
                     winner = hand;
@@ -73,33 +73,33 @@ public class BenchmarkTest extends TestCase {
         for (int i = 0; i < ITERATIONS/50; i++) {
             Deck deck = new Deck();
             deck.shuffle();
-            List<Hand> hands = new ArrayList<Hand>(10);
+            List<Cards> hands = new ArrayList<Cards>(10);
             for (int j = 0; j < 10; j++) {
-                Hand hand = new Hand();
-                hand.addCard(deck.deal());
+                Cards hand = new Cards();
+                hand.add(deck.deal());
                 hands.add(hand);
             }
             for (int j = 0; j < 10; j++) {
-                hands.get(j).addCard(deck.deal());
+                hands.get(j).add(deck.deal());
             }
             for (int j = 0; j < 10; j++) {
-                hands.get(j).addCard(deck.deal());
+                hands.get(j).add(deck.deal());
             }
             for (int j = 0; j < 10; j++) {
-                hands.get(j).addCard(deck.deal());
+                hands.get(j).add(deck.deal());
             }
-            Board board = new Board();
+            Cards board = new Cards();
             deck.burn();
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
-            Hand winner = null;
+            board.add(deck.deal());
+            Cards winner = null;
             HandRank winningRank = null;
-            for (Hand hand : hands) {
+            for (Cards hand : hands) {
                 HandRank rank = Evaluate.omaha(hand, board);
                 if (winner == null) {
                     winner = hand;
@@ -123,40 +123,40 @@ public class BenchmarkTest extends TestCase {
     }
 
     private long getEvaluations() {
-        List<Hand> hands = new ArrayList<Hand>(TOTAL);
-        List<Board> boards = new ArrayList<Board>(TOTAL);
+        List<Cards> hands = new ArrayList<Cards>(TOTAL);
+        List<Cards> boards = new ArrayList<Cards>(TOTAL);
         for (int i = 0; i < TOTAL; i++) {
             Deck deck = new Deck();
             deck.shuffle();
-            Hand hand = new Hand();
-            hand.addCard(deck.deal());
-            hand.addCard(deck.deal());
-            Board board = new Board();
+            Cards hand = new Cards();
+            hand.add(deck.deal());
+            hand.add(deck.deal());
+            Cards board = new Cards();
             deck.burn();
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
-            board.addCard(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
+            board.add(deck.deal());
             deck.burn();
-            board.addCard(deck.deal());
+            board.add(deck.deal());
             hands.add(hand);
             boards.add(board);
         }
         long start = System.currentTimeMillis();
         for (int i = 0; i < TOTAL; i++) {
-            Hand hand = hands.get(i);
-            Board board = boards.get(i);
+            Cards hand = hands.get(i);
+            Cards board = boards.get(i);
             HandRank rank = Evaluate.holdem(hand, board);
         }
         for (int i = 0; i < TOTAL; i++) {
-            Hand hand = hands.get(i);
-            Board board = boards.get(i);
+            Cards hand = hands.get(i);
+            Cards board = boards.get(i);
             HandRank rank = Evaluate.holdem(hand, board);
         }
         for (int i = 0; i < TOTAL; i++) {
-            Hand hand = hands.get(i);
-            Board board = boards.get(i);
+            Cards hand = hands.get(i);
+            Cards board = boards.get(i);
             HandRank rank = Evaluate.holdem(hand, board);
         }
         long duration = System.currentTimeMillis() - start;

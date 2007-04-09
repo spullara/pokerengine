@@ -3,6 +3,9 @@
  */
 package com.sampullara.poker;
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  * User: sam
  * Date: Apr 2, 2005
@@ -24,6 +27,22 @@ public final class Card implements Comparable<Card> {
         public String toString() {
             return suitStrings[this.ordinal()];
         }
+
+        public static Suit parse(String suit) {
+            suit = suit.toLowerCase();
+            switch (suit.toCharArray()[0]) {
+                case 'c':
+                    return CLUBS;
+                case 'd':
+                    return DIAMONDS;
+                case 'h':
+                    return HEARTS;
+                case 's':
+                    return SPADES;
+                default:
+                    throw new IllegalArgumentException("Invalid suit: " + suit);
+            }
+        }
     }
 
     public enum Rank {
@@ -33,6 +52,40 @@ public final class Card implements Comparable<Card> {
 
         public String toString() {
             return rankStrings[this.ordinal()];
+        }
+
+        public static Rank parse(String rank) {
+            rank = rank.toLowerCase();
+            switch (rank.toCharArray()[0]) {
+                case '2':
+                    return TWO;
+                case '3':
+                    return THREE;
+                case '4':
+                    return FOUR;
+                case '5':
+                    return FIVE;
+                case '6':
+                    return SIX;
+                case '7':
+                    return SEVEN;
+                case '8':
+                    return EIGHT;
+                case '9':
+                    return NINE;
+                case 't':
+                    return TEN;
+                case 'j':
+                    return JACK;
+                case 'q':
+                    return QUEEN;
+                case 'k':
+                    return KING;
+                case 'a':
+                    return ACE;
+                default:
+                    throw new IllegalArgumentException("Invalid rank: " + rank);
+            }
         }
     }
 
@@ -51,5 +104,14 @@ public final class Card implements Comparable<Card> {
 
     public String toString() {
         return "" + rank + suit;
+    }
+
+    public static List<Card> parse(String string) {
+        int length = string.length();
+        List<Card> cards = new ArrayList<Card>(length / 2);
+        for (int i = 0; i < length; i += 2) {
+            cards.add(new Card(Rank.parse(string.substring(i, i + 1)), Suit.parse(string.substring(i + 1, i + 2))));
+        }
+        return cards;
     }
 }
