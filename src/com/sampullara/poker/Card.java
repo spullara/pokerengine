@@ -3,9 +3,6 @@
  */
 package com.sampullara.poker;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * User: sam
  * Date: Apr 2, 2005
@@ -14,6 +11,18 @@ import java.util.List;
 public final class Card implements Comparable<Card> {
     private final Rank rank;
     private final Suit suit;
+
+    public int hashCode() {
+        return rank.hashCode() + suit.hashCode() * 43;
+    }
+
+    public boolean equals(Object o) {
+        Card other = (Card) o;
+        if (compareTo(other) == 0 && other.suit == suit) {
+            return true;
+        }
+        return false;
+    }
 
     public int compareTo(Card card) {
         return rank.compareTo(card.rank);

@@ -4,7 +4,6 @@
 package com.sampullara.poker;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * User: sam
@@ -25,6 +24,11 @@ public class Cards extends ArrayList<Card> {
 
     public Cards(Cards deck) {
         super(deck);
+    }
+
+    @Override
+    public boolean add(Card card) {
+        return super.add(card);
     }
 
     public String toString() {

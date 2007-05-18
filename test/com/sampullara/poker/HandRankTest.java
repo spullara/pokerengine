@@ -4,9 +4,6 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * HandRank Tester.
  *
@@ -60,7 +57,6 @@ public class HandRankTest extends TestCase {
         cards.add(new Card(Card.Rank.TWO, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.THREE, Card.Suit.HEARTS));
         cards.add(new Card(Card.Rank.FOUR, Card.Suit.HEARTS));
-        cards.add(new Card(Card.Rank.FIVE, Card.Suit.HEARTS));
         HandRank handRank = new HandRank(cards);
         return handRank;
     }

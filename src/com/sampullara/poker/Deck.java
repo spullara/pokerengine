@@ -3,9 +3,7 @@
  */
 package com.sampullara.poker;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * User: sam
@@ -32,6 +30,10 @@ public final class Deck {
      */
     public Deck() {
         cards = new Cards(deck);
+    }
+
+    public Cards getCards() {
+        return cards;
     }
 
     public void shuffle() {

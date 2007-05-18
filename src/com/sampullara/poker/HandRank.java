@@ -3,9 +3,6 @@
 */
 package com.sampullara.poker;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * User: sam
  * Date: Apr 2, 2005
@@ -18,6 +15,8 @@ public final class HandRank implements Comparable<HandRank> {
     private final Cards hand;
     private final Cards fiveCardHand;
     private Rank rank = Rank.HIGH;
+    private static final int HAND_SIZE = 5;
+    private static final int TOTAL_POSSIBLE = 7;
 
     public String toString() {
         return fiveCardHand + ": " + rank.name();
@@ -34,9 +33,11 @@ public final class HandRank implements Comparable<HandRank> {
         }
         Cards myHand = getHand();
         Cards theirHand = handRank.getHand();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < HAND_SIZE; i++) {
             if (myHand.size() > i) {
-                compare = myHand.get(i).compareTo(theirHand.get(i));
+                Card card1 = myHand.get(i);
+                Card card2 = theirHand.get(i);
+                compare = card1.compareTo(card2);
                 if (compare != 0) return compare;
             }
         }
@@ -55,7 +56,7 @@ public final class HandRank implements Comparable<HandRank> {
      */
     public HandRank(Cards hand) {
         this.hand = hand;
-        fiveCardHand = new Cards(5);
+        fiveCardHand = new Cards(HAND_SIZE);
         evaluate();
     }
 
@@ -98,8 +99,10 @@ public final class HandRank implements Comparable<HandRank> {
             if (size >= 4) {
                 rank = Rank.FOUROFAKIND;
                 // Get the five card hand
-                for (int j = 0; j < value.length; j++)
-                    fiveCardHand.add(value[j]);
+                for (int j = 0; j < value.length; j++) {
+                    Card card = value[j];
+                    if (card != null) fiveCardHand.add(card);
+                }
                 for (Card card : hand) {
                     if (card.getRank() != key) {
                         fiveCardHand.add(card);
@@ -125,7 +128,7 @@ public final class HandRank implements Comparable<HandRank> {
         // Find the straights
         int[] inarow = {1};
         Card firstCard = checkStraight(hand, inarow);
-        if (inarow[0] == 5) {
+        if (inarow[0] == HAND_SIZE) {
             foundStraight(firstCard);
             return;
         }
@@ -149,7 +152,7 @@ public final class HandRank implements Comparable<HandRank> {
         }
 
         // High Card
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < HAND_SIZE; i++) {
             if (hand.size() > i) fiveCardHand.add(hand.get(i));
         }
     }
@@ -222,7 +225,7 @@ public final class HandRank implements Comparable<HandRank> {
             if (add) {
                 if (last == null || last.getRank() != card.getRank()) {
                     fiveCardHand.add(card);
-                    if (fiveCardHand.size() == 5) break;
+                    if (fiveCardHand.size() == HAND_SIZE) break;
                     last = card;
                 }
             }
@@ -295,10 +298,10 @@ public final class HandRank implements Comparable<HandRank> {
         for (int i = 0; i < suits.length; i++) {
             Card[] cards = suits[i];
             if (cards == null) continue;
-            if (numSuits[i] >= 5) {
+            if (numSuits[i] >= HAND_SIZE) {
                 int[] inarow = {1};
                 Card firstCard = checkStraight(cards, numSuits[i], inarow);
-                if (inarow[0] == 5) {
+                if (inarow[0] == HAND_SIZE) {
                     boolean add = false;
                     for (int j = 0; j < numSuits[i]; j++) {
                         Card card = suits[i][j];
@@ -309,7 +312,7 @@ public final class HandRank implements Comparable<HandRank> {
                         if (add) {
                             fiveCardHand.add(card);
                         }
-                        if (fiveCardHand.size() == 5) break;
+                        if (fiveCardHand.size() == HAND_SIZE) break;
                     }
                     if (fiveCardHand.size() == 4) {
                         fiveCardHand.add(suits[i][0]);
@@ -317,7 +320,7 @@ public final class HandRank implements Comparable<HandRank> {
                     rank = Rank.STRAIGHTFLUSH;
                 } else {
                     // At least a flush
-                    for (int j = 0; j < 5; j++) {
+                    for (int j = 0; j < HAND_SIZE; j++) {
                         fiveCardHand.add(cards[j]);
                         rank = Rank.FLUSH;
                     }
@@ -358,10 +361,10 @@ public final class HandRank implements Comparable<HandRank> {
             lastCard = card;
 
             // Highest straight found
-            if (inarow[0] == 5) return firstCard;
+            if (inarow[0] == HAND_SIZE) return firstCard;
 
             // OPT: If we have a straight or have too few cards remaining, return.
-            if (num - i + inarow[0] < 5) return null;
+            if (num - i + inarow[0] < HAND_SIZE) return null;
         }
         return null;
     }
@@ -393,10 +396,10 @@ public final class HandRank implements Comparable<HandRank> {
             lastCard = card;
 
             // Highest straight found
-            if (inarow[0] == 5) return firstCard;
+            if (inarow[0] == HAND_SIZE) return firstCard;
 
             // OPT: If we have a straight or have too few cards remaining, return.
-            if (num - i + inarow[0] < 5) return null;
+            if (num - i + inarow[0] < HAND_SIZE) return null;
         }
         return null;
     }
@@ -424,17 +427,19 @@ public final class HandRank implements Comparable<HandRank> {
         int cardRank = card.getRank().ordinal();
         Card[] rankList = ranks[cardRank];
         if (rankList == null) {
-            rankList = new Card[NUM_SUITS];
+            rankList = new Card[7];
             ranks[cardRank] = rankList;
         }
-        rankList[numRanks[cardRank]++] = card;
+        int numRank = numRanks[cardRank]++;
+        rankList[numRank] = card;
         int cardSuit = card.getSuit().ordinal();
         Card[] suitList = suits[cardSuit];
         if (suitList == null) {
-            suitList = new Card[NUM_RANKS];
+            suitList = new Card[7];
             suits[cardSuit] = suitList;
         }
-        suitList[numSuits[cardSuit]++] = card;
+        int numSuit = numSuits[cardSuit]++;
+        suitList[numSuit] = card;
     }
 
 }
