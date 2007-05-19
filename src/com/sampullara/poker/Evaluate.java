@@ -226,7 +226,8 @@ public class Evaluate {
     static void addSorted(Cards cards, Cards hand) {
         OUTER:
         for (Card card : cards) {
-            for (int i = 0; i < hand.size(); i++) {
+            int handSize = hand.size();
+            for (int i = 0; i < handSize; i++) {
                 if (hand.get(i).compareTo(card) < 0) {
                     hand.add(i, card);
                     continue OUTER;

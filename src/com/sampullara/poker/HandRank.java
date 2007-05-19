@@ -3,6 +3,9 @@
 */
 package com.sampullara.poker;
 
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
 /**
  * User: sam
  * Date: Apr 2, 2005
@@ -427,7 +430,7 @@ public final class HandRank implements Comparable<HandRank> {
         int cardRank = card.getRank().ordinal();
         Card[] rankList = ranks[cardRank];
         if (rankList == null) {
-            rankList = new Card[7];
+            rankList = new Card[NUM_SUITS];
             ranks[cardRank] = rankList;
         }
         int numRank = numRanks[cardRank]++;
@@ -435,7 +438,7 @@ public final class HandRank implements Comparable<HandRank> {
         int cardSuit = card.getSuit().ordinal();
         Card[] suitList = suits[cardSuit];
         if (suitList == null) {
-            suitList = new Card[7];
+            suitList =  new Card[NUM_RANKS];
             suits[cardSuit] = suitList;
         }
         int numSuit = numSuits[cardSuit]++;
