@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * Time: 8:37:39 PM
  * To change this template use File | Settings | File Templates.
  */
-public class OddsBenchmarkTest {
+public class OddsBenchmark {
     public static void main(String[] args) throws InterruptedException {
         int cpus = Runtime.getRuntime().availableProcessors();
         if (args.length != 0) {
