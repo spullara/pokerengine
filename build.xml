@@ -132,6 +132,7 @@
     <target name="clean.module.pokerengine" description="cleanup module">
         <delete dir="${pokerengine.output.dir}"/>
         <delete dir="${pokerengine.testoutput.dir}"/>
+	<delete dir="test-results"/>
     </target>
 
     <target name="init" description="Build initialization">
